@@ -7,6 +7,7 @@ from transformers import AutoModelForSeq2SeqLM
 from transformers import AutoTokenizer
 from flask import Flask, request, render_template
 import json
+from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
